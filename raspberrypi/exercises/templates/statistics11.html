@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Statistic{% endblock %}
+
+{% block content %}
+
+<script src="/static/vendors/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/static/vendors/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css">
+<style>
+
+    #select_date {
+        position: absolute;
+        top:500px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
+    .list-group {
+        width: 50%;
+    }
+</style>
+
+<h2 class="center">Select Date:</h2><br>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" id="select_date" class="selecteShipDate" name="date"/>
+
+
+<ul class="list-group">
+    <li class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>
+        Average temperature:<strong>{{average|floatformat:-2}}°C</strong></li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-up"></span>
+        Max temperature:<strong>{{max_temp|floatformat:-2}}°C</strong></li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-down"></span>
+        Min temperature:<strong>{{min_temp|floatformat:-2}}°C</strong></li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-resize-full"></span>
+        Amplitude <strong>{{amplitude|floatformat:-2}}°C</strong></li>
+</ul>
+<button class='btn btn-primary submit'>Check</button>
+</form>
+
+
+<script>
+    $(document).ready(function () {
+    $input = $("#select_date");
+    $input.datepicker({
+        format: 'yyyy-mm-dd'
+    });
+    $input.data('datepicker').hide = function () {};
+    $input.datepicker('show');
+});
+
+</script>
+{% endblock %}

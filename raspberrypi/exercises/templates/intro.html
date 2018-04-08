@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}Chart{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="../../static/css/termometr.css">
+
+<div id="main">
+    <div id="thermometer">
+      <div>
+        <div id="stem"></div>
+        <div id="marks"><div id="line">--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--<br>--</div></div>
+        <div id="merc-stem"><div id="mercury"></div></div>
+        <div id="bulb"></div>
+    </div>
+  </div>
+    <div id="text">
+      <hr id="one">
+      <h1><em>Thermometer</em></h1>
+      <hr id="two">
+    </div>
+</div>
+
+
+{% endblock %}

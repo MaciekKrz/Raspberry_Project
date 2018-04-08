@@ -1,0 +1,115 @@
+body {
+  /*background: #505050 -moz-radial-gradient(top, #cdcdcf 0%, #505050 70%) no-repeat 50% 0%;*/
+  /*background: #505050 -webkit-radial-gradient(top, #cdcdcf 0%, #505050 70%) no-repeat 50% 0%;*/
+  background-size: 1200px 600px;
+  /*background: #505050 radial-gradient(top, #cdcdcf 0%, #505050 70%) no-repeat 50% 0%;*/
+  background-size: 1200px 600px;
+}
+
+.button {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  background-color: white;
+  /*background: #b19d92 -webkit-radial-gradient(top, #fbf2ed 0%, #b19d92 75%) no-repeat 50% 0%;*/
+  border-radius: 15%;
+  /*background: #b19d92 radial-gradient(top, #fbf2ed 0%, #b19d92 75%) no-repeat 50% 0%;*/
+  border-radius: 15%;
+  box-shadow:
+    -1px 1px 2px rgba(255,255,255,.6) inset,
+    1px 0 3px rgba(0,0,0,.25) inset,
+    0 -6px 12px -3px rgba(0,0,0,.8) inset,
+    0 20px 20px 3px rgba(0,0,0,.6);
+  position: relative;
+}
+.button:before {
+  content: '';
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 30px;
+  top: 30px;
+  border-radius: 50%;
+  /*background: #b19d92 -moz-linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;*/
+  /*background: #b19d92 -webkit-linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;*/
+  /*background: #b19d92 linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;*/
+  box-shadow:
+    0 1px 2px rgba(255,255,255,1) inset,
+    1px 0 3px rgba(0,0,0,.25) inset,
+    0 3px 5px rgba(0,0,0,.6);
+}
+.button:after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  left: 45px;
+  top: 45px;
+  border-radius: 50%;
+  background:
+    -moz-linear-gradient(left, transparent 49%, #000 49%, #000 50%, transparent 50%) 50% -80px,
+    -moz-linear-gradient(right top,white, #ee9900) 100% 0%,
+    -moz-linear-gradient(left top,#A00, orange) 0% 0%
+    ;
+
+  background:
+    -webkit-linear-gradient(left, transparent 49%, #000 49%, #000 50%, transparent 50%) 50% -80px,
+    -webkit-linear-gradient(right top,white, #ee9900) 100% 0%,
+    -webkit-linear-gradient(left top,#A00, orange) 0% 0%
+    ;
+  background:
+    linear-gradient(left, transparent 49%, #000 49%, #000 50%, transparent 50%) 50% -80px,
+    linear-gradient(right top,white, #ee9900) 100% 0%,
+    linear-gradient(left top,#A00, orange) 0% 0%
+    ;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  box-shadow:
+    0 -1px 2px rgba(255,255,255,1) inset,
+    -1px 0 3px rgba(0,0,0,.25) inset,
+    0 3px 3px rgba(0,0,0,.3) inset;
+}
+.knob {
+  z-index: 10;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #b19d92 -moz-radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  background: #b19d92 -webkit-radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  background: #b19d92 radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  box-shadow:
+    0 6px 5px rgba(255,255,255,.4) inset,
+    1px 0 3px rgba(0,0,0,.25) inset,
+    0 -6px 5px rgba(0,0,0,.2) inset,
+    0 15px 12px -5px rgba(0,0,0,.6);
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -4px;
+  line-height: 160px;
+  text-align: center;
+  text-shadow:
+    0 1px 2px rgba(255,255,255,1),
+    0 -1px 1px rgba(0,0,0,.25);
+}
+/*.knob:after {*/
+  /*content: '';*/
+  /*width: 16px;*/
+  /*height: 16px;*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*top: 50%;*/
+  /*margin: -12px 0 0 3px;*/
+  /*transform: rotate(230deg) translateY(-75px) rotate(-230deg);*/
+  /*border-radius: 50%;*/
+  /*z-index: 100;*/
+  /*background: #fe8400;*/
+  /*box-shadow:*/
+    /*0 1px 2px rgba(0,0,0,.35) inset,*/
+    /*0 0 18px #FFF;*/
+/*}*/
+
+/*#####################################################################################*/
