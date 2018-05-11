@@ -1,6 +1,6 @@
 print("Hello raspberry PI 3 B")
 
-a = "Ale czad chłpaku"
+a = "String"
 b = a*3
 
 print(b)
@@ -8,8 +8,8 @@ print(b)
 
 def func(n):
     if n > 5:
-        print("Ale kurwa zajebiście")
+        print("Hello")
 
 func(7)
 
-x = input("POodja liczbę cwelu:")
+x = input("POodja liczbę:")
